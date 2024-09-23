@@ -1,0 +1,117 @@
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 320px;
+}
+
+.toggle-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.toggle-buttons button {
+    background-color: #6e8efb;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 48%;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-buttons button.active {
+    background-color: #4760e6;
+}
+
+.toggle-buttons button:hover {
+    background-color: #4759d0;
+}
+
+.form-section {
+    display: none;
+}
+
+.form-section.active {
+    display: block;
+}
+
+.form-section h2 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.form-section input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box; /* Garante que padding e border sejam inclusos na largura total */
+}
+
+.password-field {
+    position: relative;
+}
+
+.password-field input {
+    width: 100%; /* Mantém o tamanho do campo de senha igual aos outros inputs */
+}
+
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #888;
+}
+
+.toggle-password:hover {
+    color: #000;
+}
+
+button[type="submit"] {
+    background-color: #6e8efb;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #4760e6;
+}
+
+/* Mensagem temporária */
+#message-box {
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Ajuste de largura fixa para os campos */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+    width: 100%;
+    box-sizing: border-box; /* Garante que padding e border sejam inclusos na largura total */
+}
